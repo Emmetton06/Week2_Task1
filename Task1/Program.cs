@@ -1,5 +1,5 @@
 ﻿/*
- * Practica 1
+ * Practical 1
  * Information: Methods demo
  * Version 1
  * Author: Emmett O'Neill
