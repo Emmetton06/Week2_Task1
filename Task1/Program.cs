@@ -1,4 +1,6 @@
-﻿using System;
+﻿
+
+using System;
 
 namespace Task1
 {
@@ -6,17 +8,29 @@ namespace Task1
     {
         static void Main()
         {
-            PrintMenu();
+            // Declare option outside the loop so the while condition can see it
+            int option;
 
-            int option = InputOption();
+            do
+            {
+                // 1 Display the menu options
+                PrintMenu();
 
-            string phase = GetMessage(option);
+                // 2 Get option from user
+                option = InputOption();
 
-            Console.WriteLine(phase);
+                // 3 Pass integer option to determine the language string phrase
+                string phase = GetMessage(option);
+
+                // 4 Display the returned string message
+                Console.WriteLine($"\nResult: {phase}\n");
+
+            } while (option != 0);
 
             Console.WriteLine("Press enter to exit");
             Console.ReadLine();
         }
+        
         static void PrintMenu()
         {
             Console.WriteLine("Please enter a valid option from below:");
