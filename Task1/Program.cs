@@ -1,4 +1,10 @@
-﻿
+﻿/*
+ * Practica 1
+ * Information: Methods demo
+ * Version 1
+ * Author: Emmett O'Neill
+ * Date: September
+ */
 
 using System;
 
